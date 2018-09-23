@@ -211,10 +211,10 @@ vlan_file.close()
 
 print(vlans) 
 
-print("I'm here..")
+#print("I'm here..")
 
 #
-# More efficent way to write the previous peice of code
+# More efficent way to write the previous piece of code
 #
 vlan_file = open('vlan.cfg', 'r')
 
