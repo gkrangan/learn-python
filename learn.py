@@ -237,6 +237,8 @@ print(vlans)
 
 #vlans = [{'id': '10'}, {'name': 'USERS'}, {'id': '20'}, {'name': 'VOICE'}, {'id': '30'}, {'name': 'WLAN'}, {'id': '40'}, {'name': 'APP'}, {'id': '50'}, {'name': 'WEB'}, {'id': '60'}, {'name': 'DB'}]
 
+print("I'm here..")
+
 write_to_file = open('new_vlan.cfg', 'w')
 
 for entry in vlans:
