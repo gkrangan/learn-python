@@ -3,6 +3,7 @@
 # http://api.open-notify.org/
 #
 
+import time
 import json
 import urllib.request
 
@@ -27,6 +28,12 @@ response = urllib.request.urlopen(url)
 obj = json.loads(response.read())
 #print(obj)
 print(json.dumps(obj, indent=4))
+print(" ")
+
+for entry in obj["response"]:
+   #print('Risetime: ' + str(entry['risetime']))
+   print('Risetime: ' + str(time.ctime(entry['risetime'])))
+   print('Duration: ' + str(entry['duration']) + 'secs')
 print(" ")
 
 #
